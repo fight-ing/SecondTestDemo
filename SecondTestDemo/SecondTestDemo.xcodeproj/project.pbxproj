@@ -21,6 +21,7 @@
 		049A716819172B7C00BDE51E /* SecondTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A716719172B7C00BDE51E /* SecondTestDemoTests.m */; };
 		049A717319172B8700BDE51E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A717219172B8700BDE51E /* RootViewController.m */; };
 		049A717619172B9200BDE51E /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A717519172B9200BDE51E /* TestViewController.m */; };
+		049A717919172F3600BDE51E /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049A717819172F3600BDE51E /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		049A717219172B8700BDE51E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		049A717419172B9200BDE51E /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		049A717519172B9200BDE51E /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		049A717719172F3600BDE51E /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		049A717819172F3600BDE51E /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				049A717219172B8700BDE51E /* RootViewController.m */,
 				049A717419172B9200BDE51E /* TestViewController.h */,
 				049A717519172B9200BDE51E /* TestViewController.m */,
+				049A717719172F3600BDE51E /* ThirdViewController.h */,
+				049A717819172F3600BDE51E /* ThirdViewController.m */,
 				049A715419172B7C00BDE51E /* Images.xcassets */,
 				049A714919172B7C00BDE51E /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				049A715319172B7C00BDE51E /* AppDelegate.m in Sources */,
+				049A717919172F3600BDE51E /* ThirdViewController.m in Sources */,
 				049A714F19172B7C00BDE51E /* main.m in Sources */,
 				049A717619172B9200BDE51E /* TestViewController.m in Sources */,
 				049A717319172B8700BDE51E /* RootViewController.m in Sources */,

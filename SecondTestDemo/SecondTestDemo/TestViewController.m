@@ -7,7 +7,7 @@
 //
 
 #import "TestViewController.h"
-#import "RootViewController.h"
+#import "ThirdViewController.h"
 @interface TestViewController ()
 
 @end
@@ -23,6 +23,10 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    NSLog(@"testVC will appear");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,7 +34,7 @@
     
     for (int i = 0; i < 5; i ++) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        button.frame = CGRectMake(100, 100+100*i, 100, 100);
+        button.frame = CGRectMake(100, 20+60*i, 100, 50);
         [button setTitle:[NSString stringWithFormat:@"btn %d",i+1] forState:UIControlStateNormal];
         [button addTarget:self action:@selector(buttonClicked:)
          forControlEvents:UIControlEventTouchUpInside];
@@ -42,6 +46,13 @@
 }
 
 -(void) buttonClicked :(UIButton *)btn {
+    NSArray *nameArray = [NSArray arrayWithObjects:@"cube",@"oglFlip",@"pageCurl",@"pageUnCurl",@"rippleEffect",@"moveIn",@"reveal",@"fade",@"suckEffect", nil];
+    CATransition *mCAT = [CATransition animation];
+    [mCAT setDuration:1];
+    [mCAT setType:[nameArray objectAtIndex:rand()%nameArray.count]];
+    [mCAT setSubtype:kCATransitionFromLeft];
+    [self.navigationController.view.layer addAnimation:mCAT forKey:nil];
+    
     switch (btn.tag) {
         case 100:
             [self.navigationController popViewControllerAnimated:YES];
@@ -57,7 +68,8 @@
             break;
         case 103:
             {
-                
+                ThirdViewController *tvc = [[ThirdViewController alloc] init];
+                [self.navigationController pushViewController:tvc animated:YES];
             }
             break;
         default:
