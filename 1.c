@@ -1,2 +1,9 @@
+#include <stdio.h>
 
-HELLO WORLD!!!
+int main (void) {
+	
+	for (int i = 0; i < 6; i ++) {
+		printf ("hello world !!\n");
+	}
+	return 0;
+}
